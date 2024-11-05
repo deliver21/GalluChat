@@ -1,0 +1,64 @@
+﻿@model Chat
+@if(Model!=null)
+{
+    <div class="container">
+            <ul class="list-unstyled p-1" style="overflow-y:scroll">
+              <li class="d-flex justify-content-between mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
+              class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between p-3">
+                    <p class="fw-bold mb-0">Brad Pitt</p>
+                    <p class="text-muted small mb-0"><i class="far fa-clock"></i> 12 mins ago</p>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                     Hi mate!
+                     I thought today it was monday , but it's tuesday innit?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex justify-content-between mb-4">
+                <div class="card w-100">
+                  <div class="card-header d-flex justify-content-between p-3">
+                    <p class="fw-bold mb-0 text-decoration-none">John Doe</p>
+                    <p class="text-muted small mb-0"><i class="far fa-clock"></i> 1 min ago</p>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                      Hell yeah)
+                    </p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar" class="rounded-circle d-flex align-self-start ms-3 shadow-1-strong" width="60">
+              </li>                   
+            </ul>
+            <form>
+                <div class="row mb-0">
+                    <div class="col-10">
+                       <div class="bg-white">
+                          <div data-mdb-input-init class="form-outline rounded-start-1 rounded-end-1">
+                            <textarea class="form-control bg-body-tertiary" id="textAreaExample2" placeholder="Message" rows="2"></textarea>
+                            @* <label class="form-label" for="textAreaExample2">Message</label>*@
+                          </div>
+                       </div> 
+                    </div>
+                    <div class="col-2">
+                       <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-rounded float-start mt-2"><i class="bi bi-send-arrow-up-fill"></i></button>
+                    </div>
+                </div> 
+            </form>               
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="text-center">
+                <h2 class="mt-5 p-1"><i class="bi bi-threads"></i></h2>
+                <h4 class="p-1">GalluChat Web</h4>
+                <h6>This is a section of Galluni Web App</h6>
+        </div>
+            
+    </div>
+}
